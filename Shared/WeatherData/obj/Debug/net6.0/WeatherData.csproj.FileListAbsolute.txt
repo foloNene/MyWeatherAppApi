@@ -1,0 +1,11 @@
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\bin\Debug\net6.0\WeatherData.deps.json
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\bin\Debug\net6.0\WeatherData.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\bin\Debug\net6.0\ref\WeatherData.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\bin\Debug\net6.0\WeatherData.pdb
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\WeatherData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\WeatherData.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\WeatherData.AssemblyInfo.cs
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\WeatherData.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\WeatherData.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\ref\WeatherData.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherData\obj\Debug\net6.0\WeatherData.pdb

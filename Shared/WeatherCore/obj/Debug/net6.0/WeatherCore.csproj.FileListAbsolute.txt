@@ -1,0 +1,14 @@
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\bin\Debug\net6.0\WeatherCore.deps.json
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\bin\Debug\net6.0\WeatherCore.runtimeconfig.json
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\bin\Debug\net6.0\WeatherCore.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\bin\Debug\net6.0\ref\WeatherCore.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\bin\Debug\net6.0\WeatherCore.pdb
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.AssemblyInfo.cs
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\ref\WeatherCore.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.pdb
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.genruntimeconfig.cache
+C:\Users\USER\Desktop\Project\MyWeatherApp\Shared\WeatherCore\obj\Debug\net6.0\WeatherCore.csproj.AssemblyReference.cache
