@@ -28,7 +28,10 @@ namespace WeatherApi.Controllers
             _roleManager = roleManager;
             _logger = logger;
         }
-
+        /// <summary>
+        /// Get all Roles avaliable
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetAllRoles()
         {
@@ -37,7 +40,11 @@ namespace WeatherApi.Controllers
             return Ok(roles);
         }
 
-
+        /// <summary>
+        /// Create a Role to Assign to User 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> CreateRole(string name)
         {
@@ -72,7 +79,10 @@ namespace WeatherApi.Controllers
             return BadRequest(new { error = "Role already exist" });
 
         }
-
+        /// <summary>
+        /// List the Users to a Role
+        /// </summary>
+        /// <returns></returns>
         [Authorize(Policy = "DepartmentPolicy")]
         [HttpGet]
         [Route("GetAllUsers")]
@@ -82,6 +92,12 @@ namespace WeatherApi.Controllers
             return Ok(users);
         }
 
+        /// <summary>
+        /// Add Role to user
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="roleName"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("AddUserToRole")]
         public async Task<IActionResult> AddUserToRole(string email, string roleName)
@@ -128,6 +144,11 @@ namespace WeatherApi.Controllers
 
         }
 
+        /// <summary>
+        /// Check the Role of a User
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetUserRoles")]
         public async Task<IActionResult> GetUserRoles(string email)
@@ -153,6 +174,12 @@ namespace WeatherApi.Controllers
 
         }
 
+        /// <summary>
+        /// Remove Role from User
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="roleName"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("RemoveUserFromRoles")]
         public async Task<IActionResult> RemoveUserFromRole(string email, string roleName)

@@ -8,6 +8,9 @@ namespace WeatherData.Models.OpenWeatherAp
 {
     public class Cloud
     {
+        /// <summary>
+        /// City's Cloud in All
+        /// </summary>
         public int All { get; set; }
     }
 }

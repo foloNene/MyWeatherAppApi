@@ -26,6 +26,11 @@ namespace WeatherApi.Controllers
             _roleManager = roleManager;
         }
 
+        /// <summary>
+        /// To get All Claims for a particular User
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetallClaims(string email)
         {
@@ -45,6 +50,13 @@ namespace WeatherApi.Controllers
             return Ok(userClaims);
         }
 
+        /// <summary>
+        /// Add Claim to a  User
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="claimName"></param>
+        /// <param name="claimValue"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("AddClaimsToUser")]
         public async Task<IActionResult> AddClaimsToUser(string email, string claimName, string claimValue)

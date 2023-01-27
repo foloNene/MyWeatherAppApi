@@ -34,6 +34,12 @@ namespace WeatherApi.Services
             _roleManager = roleManager;
         }
 
+        /// <summary>
+        /// Regiser User
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public async Task<RegistrationResponse> RegisterUserAsync(UserRegistrationDto user)
         {
 
@@ -104,6 +110,11 @@ namespace WeatherApi.Services
             };
         }
 
+        /// <summary>
+        /// Login in User
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async Task<RegistrationResponse> LoginAsync(UserLoginRequest user)
         {
 
@@ -152,6 +163,11 @@ namespace WeatherApi.Services
             });
         }
 
+        /// <summary>
+        /// Refresh token
+        /// </summary>
+        /// <param name="tokenRequest"></param>
+        /// <returns></returns>
         public async Task<AuthResult> RefreshTokenAsync(TokenRequest tokenRequest)
         {
 

@@ -16,6 +16,11 @@ namespace WeatherApi.Controllers
             _userRepository = userRepository;
         }
 
+        /// <summary>
+        /// Onboarding of Users
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] UserRegistrationDto user)
@@ -36,6 +41,11 @@ namespace WeatherApi.Controllers
             return BadRequest("Some Properties are not valid");
         }
 
+        /// <summary>
+        /// Login users
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("Login")]
         public async Task<IActionResult> Login([FromBody] UserLoginRequest user)
@@ -58,6 +68,11 @@ namespace WeatherApi.Controllers
 
         }
 
+        /// <summary>
+        /// Refresh Token For Authenication
+        /// </summary>
+        /// <param name="tokenRequest"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("RefreshToken")]
         public async Task<IActionResult> RefreshToken([FromBody] TokenRequest tokenRequest)

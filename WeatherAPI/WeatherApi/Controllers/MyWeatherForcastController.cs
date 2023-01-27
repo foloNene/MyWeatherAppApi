@@ -29,7 +29,11 @@ namespace WeatherApi.Controllers
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _scopeInfo = scopeInfo;
         }
-
+        /// <summary>
+        /// Weather Forcast Generator
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
         ////[Authorize(Policy = "DepartmentPolicy")] // only user with Policy claim department can access the method.
         [HttpGet]
         public async Task<ActionResult> City(string city)
