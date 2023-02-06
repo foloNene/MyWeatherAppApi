@@ -63,7 +63,6 @@ C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\WeatherApi.AssemblyInfoInputs.cache
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\WeatherApi.AssemblyInfo.cs
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\WeatherApi.csproj.CoreCompileInputs.cache
-C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\WeatherApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\WeatherApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\staticwebassets.development.json
@@ -85,3 +84,9 @@ C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\MailKit.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\MimeKit.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\Mail.dll
+C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\bin\Debug\net6.0\Mail.pdb
+C:\Users\USER\Desktop\Project\MyWeatherApp\WeatherAPI\WeatherApi\obj\Debug\net6.0\WeatherApi.MvcApplicationPartsAssemblyInfo.cs

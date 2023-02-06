@@ -68,6 +68,11 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
 
 
+
+//Add Email 
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -93,6 +98,10 @@ builder.Services.AddAuthorization(options =>
 
 builder.Services.AddHttpClient();
 
+//Confirm Email Verify
+//builder.Services.Configure<IdentityOptions>(
+//    opts => opts.SignIn.RequireConfirmedEmail = true
+//    );
 
 
 

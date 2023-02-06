@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Mail;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -19,19 +20,22 @@ namespace WeatherApi.Services
         private readonly TokenValidationParameters _tokenValidationParams;
         private readonly ApiDbContext _apiDbContext;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IEmailService _emailService;
 
         public UserRepository(
            UserManager<ApplicationUser> userManager,
            IOptionsMonitor<JwtConfig> optionsMonitor,
            TokenValidationParameters tokenValidationParams,
            ApiDbContext apiDbContext,
-           RoleManager<IdentityRole> roleManager)
+           RoleManager<IdentityRole> roleManager,
+           IEmailService emailService)
         {
             _userManager = userManager;
             _jwtConfig = optionsMonitor.CurrentValue;
             _tokenValidationParams = tokenValidationParams;
             _apiDbContext = apiDbContext;
             _roleManager = roleManager;
+            _emailService = emailService;
         }
 
         /// <summary>
@@ -80,6 +84,44 @@ namespace WeatherApi.Services
                 {
                     //add te user to a role
                     await _userManager.AddToRoleAsync(newUser, "AppUser");
+
+                    // //first method
+                    // //add Email verification..add Token to verify
+                    // var token = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
+                    // var email_body = "Please confirm your email address <a href = \"URL\>Click here</a>";
+
+
+                    // var callback_url = Request.Scheme + "://" + Request.Host + Url.Action("ConfirmEmail", "Authentication",
+                    //new { email = newUser.Email, token = token });
+
+                    // var body = email_body.Replace("URL",
+                    //    callback_url);
+
+                    // //Send Mail
+                    // var result = SendEmail(body, user.Email);
+
+                    // if (result)
+                    //     return Ok("Please verify your email, through the verification email we have just sent.");
+
+                    // return Ok("Please request an email verification link");
+
+
+                    //Second Method
+                    //var token = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
+                    //var confirmationLink = Url.Action(nameof(ConfirmEmail), "AuthManagement",
+                    //  new { token, email = newUser.Email }, Request.Scheme);
+                    ////var message = new Message(new[] { newUser.Email! }, "Comfirmation email link", confirmationLink!);
+                    //var message = new Message(newUser.Email!, "Comfirmation email link", confirmationLink!);
+                    //_emailService.SendMail(message);
+
+                    //    return StatusCodes(StatusCode.200Ok,
+                    //        new Response { status = "success", Message = "Email sent successfully" });
+
+                    //else
+                    //{
+                    //    return statuscode(StatusCodes.Status500InternalServerError,
+                    //        new message { StatusCodes = "Error", Message = "An error occured" })
+                    //    }
 
 
                     var jwtToken = await GenerateJwtToken(newUser);

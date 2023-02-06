@@ -20,7 +20,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "c5ed63e4-8193-41de-84c2-a4992e942fac": {
+      "ProjectGuid": "c5ed63e4-8193-41de-84c2-a4992e942fac",
+      "DisplayName": "Mail",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
